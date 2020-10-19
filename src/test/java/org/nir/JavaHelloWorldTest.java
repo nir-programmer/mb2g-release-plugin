@@ -1,6 +1,7 @@
-package guru.springframework;
+package org.nir;
 
 import org.junit.jupiter.api.Test;
+import org.nir.JavaHelloWorld;
 
 class JavaHelloWorldTest {
 
