@@ -3,8 +3,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.nir</groupId>
-    <artifactId>16-maven-release-plugin</artifactId>
-    <version>1.18-SNAPSHOT</version>
+    <artifactId>13-packagecloud-repository</artifactId>
+    <version>1.19-SNAPSHOT</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -13,7 +13,7 @@
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <junit.version>5.3.2</junit.version>
-        <project.scm.id>github</project.scm.id>
+       <!--  <project.scm.id>github</project.scm.id> -->
     </properties>
 
     <dependencies>
@@ -31,12 +31,12 @@
         </dependency>
     </dependencies>
 
-   <scm>
-		<developerConnection>scm:git:https://github.com/nir-programmer/mb2g-release-plugin.git</developerConnection>
-		<url>https://github.com/nir-programmer/mb2g-release-plugin.git</url>
-		<tag>HEAD</tag>
-	</scm>
-
+   <!--  <scm>
+        <developerConnection>scm:git:https://github.com/springframeworkguru/mb2g-release-plugin.git</developerConnection>
+        <url>https://github.com/springframeworkguru/mb2g-release-plugin</url>
+        <tag>HEAD</tag>
+    </scm>
+ -->
     <build>
         <extensions>
             <extension>
@@ -51,27 +51,27 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.0</version>
             </plugin>
-            <plugin>
+           <!--  <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
                 <version>2.5.3</version>
                 <configuration>
 
                     <scmCommentPrefix>[maven-release-plugin] [skip ci]</scmCommentPrefix>
-
+https://packagecloud.io/bogotobogo/snapshot
                 </configuration>
-            </plugin>
+            </plugin> -->
         </plugins>
     </build>
 
     <distributionManagement>
         <repository>
             <id>packagecloud.release</id>
-            <url>packagecloud+https://packagecloud.io/springframeworkguru/release</url>
+            <url>packagecloud+https://packagecloud.io/bogotobogo/release</url>
         </repository>
         <snapshotRepository>
             <id>packagecloud.snapshot</id>
-            <url>packagecloud+https://packagecloud.io/springframeworkguru/snapshot</url>
+            <url>packagecloud+https://packagecloud.io/bogotobogo/snapshot</url>
         </snapshotRepository>
     </distributionManagement>
 </project>
