@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.nir</groupId>
-    <artifactId>13-packagecloud-repository</artifactId>
+    <artifactId>16-maven-release-plugin</artifactId>
     <version>1.19-SNAPSHOT</version>
 
     <properties>
